@@ -284,7 +284,7 @@ const CompanyList = () => {
   };
 
   // Fetch companies without caching
-  const fetchCompanies = async (url = "http://127.0.0.1:8000/api/companies/") => {
+  const fetchCompanies = async (url = "https://stock-market-2-ybu3.onrender.com/api/companies/") => {
     try {
       setLoading(true);
       const res = await axios.get(url, { headers: getAuthHeaders() });
@@ -305,7 +305,7 @@ const CompanyList = () => {
   const fetchWatchlistSymbols = async () => {
     try {
       const res = await axios.get(
-        "http://127.0.0.1:8000/api/account/watchlist/check/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/watchlist/check/",
         { headers: getAuthHeaders() }
       );
       setWatchlistSymbols(res.data.symbols);
@@ -318,7 +318,7 @@ const CompanyList = () => {
   const addToWatchlist = async (symbol, companyName) => {
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/account/watchlist/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/watchlist/",
         { 
           name: companyName,
           symbols: [symbol]
@@ -366,7 +366,7 @@ const CompanyList = () => {
       };
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/api/account/transactions/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/transactions/",
         transactionData,
         { headers: getAuthHeaders() }
       );
