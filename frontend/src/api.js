@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/account/",
+  baseURL: "https://stock-market-2-ybu3.onrender.com/api/account/",
 });
 
 // Add request interceptor for auth token
