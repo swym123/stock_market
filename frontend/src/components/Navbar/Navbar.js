@@ -36,7 +36,7 @@
 //     const fetchSuggestions = async () => {
 //       if (searchQuery.length > 1) {
 //         try {
-//           const response = await axios.get("http://127.0.0.1:8000/api/search/", { params: { q: searchQuery } })
+//           const response = await axios.get("https://stock-market-2-ybu3.onrender.com/api/search/", { params: { q: searchQuery } })
 //           setSuggestions(response.data)
 //           setShowSuggestions(true)
 //         } catch (error) {
@@ -64,7 +64,7 @@
 //     e.preventDefault()
 //     try {
 //       if (isLogin) {
-//         const response = await axios.post("http://127.0.0.1:8000/api/account/login/", {
+//         const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/login/", {
 //           username: authData.name,
 //           password: authData.password,
 //         })
@@ -90,7 +90,7 @@
 //         setShowAuthModal(false)
 //         setAuthData({ name: "", email: "", password: "" })
 //       } else {
-//         const response = await axios.post("http://127.0.0.1:8000/api/account/signup/", {
+//         const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/signup/", {
 //           username: authData.name,
 //           email: authData.email,
 //           password: authData.password,
@@ -126,7 +126,7 @@
 //   const handleLogout = async () => {
 //     try {
 //       await axios.post(
-//         "http://127.0.0.1:8000/api/account/logout/",
+//         "https://stock-market-2-ybu3.onrender.com/api/account/logout/",
 //         {
 //           refresh_token: localStorage.getItem("refresh_token"),
 //         },
@@ -463,7 +463,7 @@
 //     const fetchSuggestions = async () => {
 //       if (searchQuery.length > 1) {
 //         try {
-//           const response = await axios.get("http://127.0.0.1:8000/api/search/", { params: { q: searchQuery } })
+//           const response = await axios.get("https://stock-market-2-ybu3.onrender.com/api/search/", { params: { q: searchQuery } })
 //           setSuggestions(response.data)
 //           setShowSuggestions(true)
 //         } catch (error) {
@@ -530,7 +530,7 @@
 //     e.preventDefault()
 //     try {
 //       if (isLogin) {
-//         const response = await axios.post("http://127.0.0.1:8000/api/account/login/", {
+//         const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/login/", {
 //           username: authData.name,
 //           password: authData.password,
 //         })
@@ -556,7 +556,7 @@
 //         setShowAuthModal(false)
 //         setAuthData({ name: "", email: "", password: "" })
 //       } else {
-//         const response = await axios.post("http://127.0.0.1:8000/api/account/signup/", {
+//         const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/signup/", {
 //           username: authData.name,
 //           email: authData.email,
 //           password: authData.password,
@@ -591,7 +591,7 @@
 //   const handleLogout = async () => {
 //     try {
 //       await axios.post(
-//         "http://127.0.0.1:8000/api/account/logout/",
+//         "https://stock-market-2-ybu3.onrender.com/api/account/logout/",
 //         {
 //           refresh_token: localStorage.getItem("refresh_token"),
 //         },
@@ -952,7 +952,7 @@ const Navbar = () => {
     const fetchSuggestions = async () => {
       if (searchQuery.length > 1) {
         try {
-          const response = await axios.get("http://127.0.0.1:8000/api/search/", { params: { q: searchQuery } })
+          const response = await axios.get("https://stock-market-2-ybu3.onrender.com/api/search/", { params: { q: searchQuery } })
           setSuggestions(response.data)
           setShowSuggestions(true)
         } catch (error) {
@@ -1121,7 +1121,7 @@ const Navbar = () => {
     
     try {
       if (isLogin) {
-        const response = await axios.post("http://127.0.0.1:8000/api/account/login/", {
+        const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/login/", {
           username: authData.name,
           password: authData.password,
         })
@@ -1148,7 +1148,7 @@ const Navbar = () => {
         setAuthData({ name: "", email: "", password: "" })
         setAuthError("")
       } else {
-        const response = await axios.post("http://127.0.0.1:8000/api/account/signup/", {
+        const response = await axios.post("https://stock-market-2-ybu3.onrender.com/api/account/signup/", {
           username: authData.name,
           email: authData.email,
           password: authData.password,
@@ -1186,7 +1186,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/account/logout/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/logout/",
         {
           refresh_token: localStorage.getItem("refresh_token"),
         },

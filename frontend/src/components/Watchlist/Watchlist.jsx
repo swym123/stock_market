@@ -39,7 +39,7 @@ const WatchlistPage = () => {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://127.0.0.1:8000/api/account/watchlist/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/watchlist/",
         { headers: getAuthHeaders() }
       );
       
@@ -87,7 +87,7 @@ const WatchlistPage = () => {
   const fetchPrices = async (symbols) => {
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/api/account/watchlist/prices/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/watchlist/prices/",
         { symbols },
         { headers: getAuthHeaders() }
       );
@@ -133,7 +133,7 @@ const WatchlistPage = () => {
       };
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/api/account/transactions/",
+        "https://stock-market-2-ybu3.onrender.com/api/account/transactions/",
         transactionData,
         { headers: getAuthHeaders() }
       );
@@ -169,7 +169,7 @@ const WatchlistPage = () => {
     e.stopPropagation();
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/account/watchlist/${id}/`,
+        `https://stock-market-2-ybu3.onrender.com/api/account/watchlist/${id}/`,
         { headers: getAuthHeaders() }
       );
       setWatchlist(prev => prev.filter(item => item.id !== id));

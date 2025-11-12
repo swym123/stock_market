@@ -31,7 +31,7 @@ const Portfolio = () => {
   const fetchHoldings = async () => {
     try {
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/account/portfolio/',
+        'https://stock-market-2-ybu3.onrender.com/api/account/portfolio/',
         { headers: getAuthHeaders() }
       );
       const holdingsData = Array.isArray(response.data.results) ? response.data.results : response.data;
@@ -55,7 +55,7 @@ const Portfolio = () => {
     }
   };
 
-  const fetchTransactions = async (url = 'http://127.0.0.1:8000/api/account/transactions/history/') => {
+  const fetchTransactions = async (url = 'https://stock-market-2-ybu3.onrender.com/api/account/transactions/history/') => {
     try {
       setLoading(true);
       const response = await axios.get(url, { headers: getAuthHeaders() });
@@ -73,7 +73,7 @@ const Portfolio = () => {
   const fetchCurrentPrice = async (symbol) => {
     try {
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/account/watchlist/prices/',
+        'https://stock-market-2-ybu3.onrender.com/api/account/watchlist/prices/',
         { symbols: [symbol] },
         { headers: getAuthHeaders() }
       );
@@ -88,7 +88,7 @@ const Portfolio = () => {
     try {
       setLoading(true);
       await axios.post(
-        'http://127.0.0.1:8000/api/account/transactions/',
+        'https://stock-market-2-ybu3.onrender.com/api/account/transactions/',
         {
           symbol: transactionModal.symbol,
           transaction_type: transactionModal.transaction_type,

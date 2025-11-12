@@ -20,7 +20,7 @@ const Home = () => {
 
   const fetchMarketData = async () => {
     try {
-      const response = await fetch('http://localhost:8000/StockIndex/market-data/')
+      const response = await fetch('https://stock-market-2-ybu3.onrender.com/StockIndex/market-data/')
       const data = await response.json()
       setMarketData(data)
     } catch (error) {
@@ -30,7 +30,7 @@ const Home = () => {
 
   const fetchTopStocks = async () => {
     try {
-      const response = await fetch('http://localhost:8000/StockIndex/top-stocks/')
+      const response = await fetch('https://stock-market-2-ybu3.onrender.com/StockIndex/top-stocks/')
       const data = await response.json()
       setTopStocks(data)
     } catch (error) {
@@ -41,7 +41,7 @@ const Home = () => {
   const fetchNews = async (query = "") => {
     setLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/api/news/?q=${query}`)
+      const response = await fetch(`https://stock-market-2-ybu3.onrender.com/api/news/?q=${query}`)
       const data = await response.json()
       setNews(data)
     } catch (error) {

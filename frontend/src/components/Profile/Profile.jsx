@@ -54,7 +54,7 @@
 //         throw new Error("Authentication token not found. Please log in again.")
 //       }
 
-//       const response = await fetch("http://localhost:8000/api/account/profile/", {
+//       const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/profile/", {
 //         method: "GET",
 //         headers: {
 //           Authorization: `Bearer ${token}`,
@@ -149,7 +149,7 @@
 //         throw new Error("Authentication token not found. Please log in again.")
 //       }
 
-//       const response = await fetch("http://localhost:8000/api/account/profile/", {
+//       const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/profile/", {
 //         method: "PUT",
 //         headers: {
 //           Authorization: `Bearer ${token}`,
@@ -213,7 +213,7 @@
 //         throw new Error("Authentication token not found. Please log in again.")
 //       }
 
-//       const response = await fetch("http://localhost:8000/api/account/add_funds/", {
+//       const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/add_funds/", {
 //         method: "POST",
 //         headers: {
 //           Authorization: `Bearer ${token}`,
@@ -621,7 +621,7 @@ const ProfilePage = () => {
         throw new Error("Authentication token not found. Please log in again.")
       }
 
-      const response = await fetch("http://localhost:8000/api/account/profile/", {
+      const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/profile/", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -794,7 +794,7 @@ const ProfilePage = () => {
         throw new Error("Authentication token not found. Please log in again.")
       }
 
-      const response = await fetch("http://localhost:8000/api/account/profile/", {
+      const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/profile/", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -882,7 +882,7 @@ const ProfilePage = () => {
         throw new Error("Payment processing failed. Please try again or use a different card.")
       }
 
-      const response = await fetch("http://localhost:8000/api/account/add_funds/", {
+      const response = await fetch("https://stock-market-2-ybu3.onrender.com/api/account/add_funds/", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
